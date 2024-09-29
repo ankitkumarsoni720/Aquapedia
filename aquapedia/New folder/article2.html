@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | Aquapedia</title>
+    <link rel="stylesheet" href="article2.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Aquapedia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Articles Section -->
+    <section id="articles">
+        <h2>Water Conservation Articles</h2>
+        <p>Read the latest articles on water conservation techniques and efficient water use. Share your own articles and join the conversation.</p>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search articles..." id="search">
+            <button type="submit">Search</button>
+        </div>
+
+        <!-- Article List -->
+        <div class="article-list">
+            <article class="article-item">
+                <h3>5 Effective Ways to Save Water at Home</h3>
+                <p>Conserving water in your daily life can make a big impact. Learn 5 simple ways you can save water at home without sacrificing comfort...</p>
+                <a href="article1.html" class="read-more">Read More</a>
+            </article>
+
+            <article class="article-item">
+                <h3>Rainwater Harvesting: A Beginner's Guide</h3>
+                <p>Rainwater harvesting is an eco-friendly solution to water shortages. This guide will walk you through the basics of setting up a system...</p>
+                <a href="article2.html" class="read-more">Read More</a>
+            </article>
+
+            <article class="article-item">
+                <h3>Greywater Systems: Efficient Water Reuse</h3>
+                <p>Reusing greywater can reduce your water bill and help the environment. Discover how greywater systems work and their benefits...</p>
+                <a href="article3.html" class="read-more">Read More</a>
+            </article>
+        </div>
+
+        <!-- Post New Article Section -->
+        <section id="post-article">
+            <h3>Post Your Article</h3>
+            <form action="submit_article.php" method="POST" enctype="multipart/form-data">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="10" required></textarea>
+
+                <label for="image">Upload Image (optional):</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <label for="video">Upload Video (optional):</label>
+                <input type="file" id="video" name="video" accept="video/*">
+
+                <input type="submit" value="Submit Article">
+            </form>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Aquapedia. All rights reserved.</p>
+    </footer>
+</body>
+</html>

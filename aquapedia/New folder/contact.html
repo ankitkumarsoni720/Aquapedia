@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aquapedia</title>
+    <link rel="stylesheet" href="contact.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Aquapedia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, suggestions, or just want to connect with us, feel free to reach out!</p>
+
+        <!-- Contact Form -->
+        <form action="submit_contact.php" method="POST" id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h3>Our Contact Information</h3>
+            <ul>
+                <li>Email: <a href="mailto:support@aquapedia.com">support@aquapedia.com</a></li>
+                <li>Phone: +123-456-7890</li>
+                <li>Address: 123 Aquapedia Street, Water City, Planet Earth</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+        <h3>Find Us Here</h3>
+        <iframe src="https://maps.google.com/maps?q=123%20Aquapedia%20Street%2C%20Water%20City%2C%20Planet%20Earth&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Aquapedia. All rights reserved.</p>
+    </footer>
+</body>
+</html>

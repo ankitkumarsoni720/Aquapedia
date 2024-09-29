@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquapedia | Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS File -->
+    <script>
+        // Function for language selection
+        function changeLanguage() {
+            var selectedLanguage = document.getElementById("language").value;
+            alert("Language changed to " + selectedLanguage); // Placeholder for actual implementation
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Aquapedia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <!-- Language Selector -->
+                    <select id="language" onchange="changeLanguage()">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <!-- More language options -->
+                    </select>
+                </li>
+                <li><a href="register.html" class="join-btn">Join Us</a></li> <!-- Join Us Button -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to Aquapedia</h2>
+            <p>Promoting water-efficient techniques and sustainable practices.</p>
+            <a href="articles.html" class="cta-btn">Explore Articles</a>
+            <a href="post_article.html" class="cta-btn">Post an Article</a> <!-- Link to post article page -->
+            <a href="register.html" class="cta-btn">Join Us</a> <!-- Link to Join Us Registration page -->
+        </div>
+    </section>
+     <!-- Recent Articles Section -->
+     <section id="recent-articles">
+        <h2>Recent Articles</h2>
+        <div class="article-list">
+            <article>
+                <h3><a href="article1.html">Water Conservation in Agriculture</a></h3>
+                <p>An expert guide to efficient water usage in agricultural practices.</p>
+            </article>
+            <article>
+                <h3><a href="article2.html">Greywater Recycling Techniques</a></h3>
+                <p>How to reuse household water for non-potable purposes.</p>
+            </article>
+            <!-- More articles -->
+
+    <!-- Key Features Section -->
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>Expert Knowledge</h3>
+                <p>Connect with water conservation experts to learn the best practices.</p>
+            </div>
+            <div class="feature-item">
+                <h3>AI-Powered Validation</h3>
+                <p>Ensure the quality of content through AI-based checks.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Community Engagement</h3>
+                <p>Participate in discussions and share knowledge with peers.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Multilingual Support</h3>
+                <p>Available in 32 languages to reach global audiences.</p>
+            </div>
+        </div>
+    </section>
+
+   
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Aquapedia. All rights reserved.</p>
+    </footer>
+</body>
+</html>

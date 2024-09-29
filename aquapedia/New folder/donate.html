@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Aquapedia</title>
+    <link rel="stylesheet" href="donatestyle.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Aquapedia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Donate Section -->
+    <section id="donate-page">
+        <h2>Support Aquapedia</h2>
+        <p>Your contributions help us continue promoting sustainable water management practices. Every donation makes a difference!</p>
+
+        <!-- Donation Form -->
+        <form id="donate-form" action="process_donation.php" method="POST">
+            <label for="donation-amount">Donation Amount (USD)</label>
+            <input type="number" id="donation-amount" name="donation-amount" min="1" placeholder="Enter donation amount" required>
+
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="paypal">PayPal</option>
+                <option value="credit-card">Credit/Debit Card</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <input type="submit" value="Donate Now">
+        </form>
+
+        <div class="thank-you-message">
+            <p>Thank you for your support!</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Aquapedia. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

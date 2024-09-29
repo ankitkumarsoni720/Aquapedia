@@ -1,0 +1,156 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #005fa3;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+}
+
+/* Forum Section */
+#forum {
+    padding: 40px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#forum h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Forum Post */
+.forum-post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.forum-post img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.forum-post h3 {
+    margin: 0;
+    color: #0077cc;
+}
+
+.forum-post p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Post Reply Box */
+.post-reply {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.post-reply textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: none;
+}
+
+.post-reply input[type="submit"] {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.post-reply input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #forum {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .forum-post {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .forum-post img {
+        margin-bottom: 10px;
+    }
+
+    .forum-post h3 {
+        font-size: 1.5em;
+    }}
+   

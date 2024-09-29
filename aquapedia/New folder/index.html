@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquapedia | Water Conservation Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            
+            <span><img  src="/logo.png"></span>
+            <h1>Aquapedia</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="article2.html">Articles</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="main-content">
+        <h2>Welcome to Aquapedia</h2>
+        <p>Your go-to platform for water conservation tips, articles, and community knowledge-sharing.</p>
+
+        <!-- Language Selection Dropdown -->
+        <label for="language-select">Choose your language:</label>
+        <select id="language-select" name="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <!-- Add more language options as needed -->
+        </select>
+
+        <!-- Post Article Section -->
+        <h3>Share Your Knowledge</h3>
+        <form id="post-article-form" action="submit_article.php" method="POST" enctype="multipart/form-data">
+            <label for="article-title">Article Title:</label>
+            <input type="text" id="article-title" name="title" placeholder="Enter the title" required>
+
+            <label for="article-content">Write Your Article:</label>
+            <textarea id="article-content" name="content" rows="10" placeholder="Share your water conservation tips..." required></textarea>
+
+            <!-- Upload Image and Video -->
+            <label for="article-image">Upload an Image:</label>
+            <input type="file" id="article-image" name="image" accept="image/*">
+
+            <label for="article-video">Upload a Video:</label>
+            <input type="file" id="article-video" name="video" accept="video/*">
+
+            <!-- Text-to-Audio Feature -->
+            <div id="text-to-audio">
+                <label for="text-to-audio-btn">Listen to the Article:</label>
+                <button id="text-to-audio-btn" onclick="textToAudio()">Convert Text to Audio</button>
+            </div>
+
+            <!-- Summary Box -->
+            <div id="summary-box">
+                <h4>Article Summary</h4>
+                <textarea id="article-summary" name="summary" rows="3" placeholder="The summary of the article will appear here..." readonly></textarea>
+            </div>
+
+            <input type="submit" value="Post Article">
+
+        </form>
+    </section>
+
+    <!-- Join Us Button with Registration Form -->
+    <section id="join-us">
+        <h3>Become a Part of Aquapedia</h3>
+        <p>Join our community and start contributing today!</p>
+        <button id="join-us-btn" onclick="window.location.href='register.html'">Join Us</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Aquapedia. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Text-to-Audio Script -->
+    <script>
+        function textToAudio() {
+            let articleText = document.getElementById("article-content").value;
+            let speech = new SpeechSynthesisUtterance(articleText);
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
